@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Volver"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Contactenos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form>
+    <br>
+    <ion-input color="success" label="Correo" label-placement="floating" fill="outline" placeholder="Digite su correo electrónico"></ion-input>
+    <br>
+    
+    <ion-input color="success" label="Nombre" label-placement="floating" fill="outline" placeholder="Digite al marica de Chica"></ion-input>
+    <br>
+    <ion-input color="success" label="Servicio" label-placement="floating" fill="outline" placeholder="Digite el servicio que desea"></ion-input>
+
+    <br>
+    <ion-input color="success" label="Comentario" label-placement="floating" fill="outline" placeholder="¿Algún comentario que quiera dejarnos?"></ion-input>
+    <br>
+    <ion-input color="success" label="Número de contacto" label-placement="floating" fill="outline" placeholder="Número al cual llamaremos"></ion-input>
+    <br>
+    <div class="Envia"><ion-button class="boton" id="present-alert">Envia</ion-button></div>
+
+    <ion-alert
+    trigger="present-alert"
+    header="Se ha recibido el mensaje"
+    message="Gracias por contactarnos"
+    [buttons]="alertButtons"
+  ></ion-alert>
+  </form>
+</ion-content>
